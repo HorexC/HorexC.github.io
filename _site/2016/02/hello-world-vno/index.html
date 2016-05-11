@@ -72,7 +72,7 @@
   
   <!-- Weibo -->
   <li class="navigation__item">
-    <a href="http://weibo.com/Horex" title="@Horex 的微博" target="_blank">
+    <a href="http://weibo.com/1884482684" title="@1884482684 的微博" target="_blank">
       <i class='social fa fa-weibo'></i>
       <span class="label">Weibo</span>
     </a>
@@ -82,7 +82,7 @@
   
   <!-- Github -->
   <li class="navigation__item">
-    <a href="https://github.com/Horex" title="@Horex 的 Github" target="_blank">
+    <a href="https://github.com/HorexC" title="@HorexC 的 Github" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -135,15 +135,14 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="2016-02-16 14:32:24 +0800" itemprop="datePublished" class="post-meta__date date">2016-02-16</time> &#8226; <span class="post-meta__tags tags"></span>
-    </div>
-    <h1 class="post-title">Hello World - Vno</h1>
-  </header>
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <section class="post">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Hello World - Vno</h1>
+    <p class="post-meta"><time datetime="2016-02-16T14:32:24+08:00" itemprop="datePublished">Feb 16, 2016</time></p>
+  </header>
+  
+  <div class="post-content" itemprop="articleBody">
     <h4>What&#39;s this</h4>
 
 <p><a href="https://github.com/onevcat/vno-jekyll">Vno Jekyll</a> is a theme for <a href="http://jekyllrb.com">Jekyll</a>. It is a port of my Ghost theme <a href="https://github.com/onevcat/vno">vno</a>, which is originally developed from <a href="https://github.com/daleanthony/uno">Dale Anthony&#39;s Uno</a>.</p>
@@ -190,50 +189,44 @@ $ bundler exec jekyll serve
 
 <p>Great thanks to <a href="https://github.com/daleanthony">Dale Anthony</a> and his <a href="https://github.com/daleanthony/uno">Uno</a>. Vno Jekyll is based on Uno, and contains a lot of modification on page layout, animation, font and some more things I can not remember. Vno Jekyll is followed with Uno and be licensed as <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>. See the link for more information.</p>
 
-  </section>
+  </div>
+
 </article>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'horexc'; // required: replace example with your forum shortname 这个地方需要改成你配置的网站名
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    $('#disqus_container .comment').on('click',function(){
+        $(this).html('加载中...');
+        var disqus_shortname = 'AlfredSun';
+        var that = this;
+        BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()}); //这是一个加载js的函数
+});
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
 <section class="read-more">
    
    
-   
-   
    <div class="read-more-item">
-       <span class="read-more-item-dim">更早的文章</span>
-       <h2 class="post-list__post-title post-title"><a href="/2016/02/sample-post/" title="link to Sample Post">Sample Post</a></h2>
-       <p class="excerpt">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-r...&hellip;</p>
-       <div class="post-list__meta"><time datetime="2016-02-15 14:32:24 +0800" class="post-list__meta--date date">2016-02-15</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/sample-post/>继续阅读</a></div>
+       <span class="read-more-item-dim">最近的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/05/useMarkdown/" title="link to useMarkdown">useMarkdown</a></h2>
+       <p class="excerpt">MouOverviewMou, the missing Markdown editor for web developers.SyntaxStrong and Emphasizestrong or strong ( Cmd + B )emphasize or emphasize ( Cmd + I )Sometimes I want a lot of text to be bold.Like, seriously, a LOT of textBlockquotesRight angle b...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-05-11 14:32:24 +0800" class="post-list__meta--date date">2016-05-11</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/05/useMarkdown/>继续阅读</a></div>
    </div>
    
+   
+   
 </section>
-
-<section class="post-comments">
-  
-    <div id="disqus_thread"></div>
-    <script>
-    
-    var disqus_config = function () {
-        this.page.url = "http://HorexC.github.io/2016/02/hello-world-vno/";
-        this.page.identifier = "/2016/02/hello-world-vno/";
-    };
-
-    var disqus_shortname = 'vno-jekyll';
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
-    
-  
-  
-  
-  
-</section>
-
 
             <section class="footer">
     <footer>
